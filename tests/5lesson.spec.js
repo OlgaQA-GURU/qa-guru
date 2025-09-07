@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { faker } from '@faker-js/faker';
-import { MainPage, RegisterPage } from '../src/pages/index';
+import { MainPage, RegisterPage } from '../src/pages/0.index.js';
 
 const URL = 'https://realworld.qa.guru/';
 
@@ -9,7 +9,7 @@ test.describe('Регистрация', () => {
 		await page.goto(URL);
 	});
 
-	test.only('Пользователь не может зарегистрироваться повторно', async ({
+	test('Пользователь не может зарегистрироваться повторно', async ({
 		page,
 	}) => {
 		const user = {

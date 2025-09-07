@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { faker } from '@faker-js/faker';
-import { MainPage, RegisterPage, LikeArticle } from '../../src/pages/0.index';
+import { MainPage, RegisterPage, LikeArticle } from '../src/pages/0.index.js';
 
 const URL = 'https://realworld.qa.guru/';
 
@@ -24,6 +24,6 @@ test.describe('', () => {
         await likeArticle.gotoLike();
 
 
-		await expect(page.locator('button:has-text("( 1 )")')).toBeVisible();
+		await expect(page.locator('button:has-text("( 1 )")').first()).toBeVisible();
     });
 });

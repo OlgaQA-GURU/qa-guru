@@ -1,4 +1,4 @@
-export * from './1.main.page.js/index.js';
+export * from './1.main.page.js';
 export * from './2.register.page';
 export * from './3.log.out.page';
 export * from './4.create.article.page';
