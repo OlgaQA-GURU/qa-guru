@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { faker } from '@faker-js/faker';
 import { nanoid } from 'nanoid';
-import {MainPage, RegisterPage, CreateArticle} from '../src/pages/0.index';
+import {MainPage, RegisterPage, CreateArticle} from '../../src/pages/0.index';
 const URL = 'https://realworld.qa.guru/';
 
 test.describe('', () => {

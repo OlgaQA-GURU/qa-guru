@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { faker } from '@faker-js/faker';
-import {MainPage, RegisterPage, TagSearch} from '../src/pages/0.index';
+import {MainPage, RegisterPage, TagSearch} from '../../src/pages/0.index';
 const URL = 'https://realworld.qa.guru/';
 
 test.describe('', () => {
